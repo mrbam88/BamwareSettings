@@ -8,12 +8,20 @@ let package = Package(
         .library(name: "BamwareSettings", targets: ["BamwareSettings"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/mrbam88/BamwareCore.git", from: "1.0.1"),
         .package(url: "https://github.com/groue/GRDB.swift.git", from: "6.0.0")
     ],
     targets: [
         .target(
             name: "BamwareSettings",
-            dependencies: [.product(name: "GRDB", package: "GRDB.swift")]
+            dependencies: [
+                "BamwareCore",
+                .product(name: "GRDB", package: "GRDB.swift")
+            ]
+        ),
+        .testTarget(
+            name: "BamwareSettingsTests",
+            dependencies: ["BamwareSettings"]
         )
     ]
 )

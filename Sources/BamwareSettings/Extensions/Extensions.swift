@@ -1,6 +1,8 @@
 import SwiftUI
 
-extension ColorScheme {
+// MARK: - ColorScheme <-> String
+
+public extension ColorScheme {
     var stringValue: String {
         switch self {
         case .light: return "light"
@@ -10,7 +12,7 @@ extension ColorScheme {
     }
 }
 
-extension String {
+public extension String {
     func toColorScheme() -> ColorScheme? {
         switch self {
         case "light": return .light
@@ -20,7 +22,9 @@ extension String {
     }
 }
 
-extension DynamicTypeSize {
+// MARK: - DynamicTypeSize ↔︎ String
+
+public extension DynamicTypeSize {
     var name: String {
         switch self {
         case .xSmall: return "xSmall"

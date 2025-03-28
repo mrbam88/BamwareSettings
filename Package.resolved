@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "bamwarecore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mrbam88/BamwareCore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "813cbeb5dc9f06f0b212cc18baa3e4f5092354c9"
+      }
+    },
+    {
       "identity" : "grdb.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/groue/GRDB.swift.git",

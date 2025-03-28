@@ -12,7 +12,7 @@
 		<key>BamwareSettings.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>7</integer>
 		</dict>
 		<key>MyPlayground (Playground).xcscheme</key>
 		<dict>
@@ -33,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>BamwareSettings</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BamwareSettingsTests</key>
 		<dict>
 			<key>primary</key>
 			<true/>

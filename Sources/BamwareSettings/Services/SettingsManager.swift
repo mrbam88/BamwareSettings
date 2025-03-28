@@ -47,3 +47,4 @@ public final class SettingsManager: SettingsProviding {
         overrideLocale = Locale(identifier: current == "en_US" ? "fr_FR" : "en_US")
     }
 }
+
